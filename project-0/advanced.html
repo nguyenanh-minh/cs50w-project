@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google</title>
+        <link rel="icon" type="image/png" href="google-icon.webp">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div> 
+            <nav>
+                <img src="google-logo.png" style="
+                position: absolute;
+                width: 74px;
+                top: 25px;
+                left: 25px;
+                ">
+                <a href="index.html">Google Search</a>
+                <a href="images.html" style="margin-right:10px">Images</a>
+            </nav>
+            <h2 style="
+                margin-top:50px;
+                margin-left: 40px; 
+                color: #5f6368; 
+                font-weight: lighter; 
+                font-size: 25px;
+                margin-bottom: 35px;
+                ">
+                Advanced Search
+            </h2>
+        </div>
+        <hr style="background-color: white;">
+        <div class="container">
+            <form action="https://www.google.com/search">
+            <!--1-->
+            <div class="row" style="padding-top: 40px">
+                <div class="left" style="font-size: 20px;">
+                    Find pages with...
+                </div>
+                <div class="right" style="font-weight: bold;">
+                    To do this in the search box
+                </div>
+            </div>
+            <!--2-->
+            <div class="row">
+                <div class="left">
+                    <div class="left-left">
+                        all these words:
+                    </div>
+                    <div class="left-right">
+                        <input type="text" class="advanced-search-textarea" name="as_q" autocomplete="off">
+                    </div>
+                </div>
+                <div class="right">
+                    Type the important words: <b>tri-colour rat terrier</b>
+                </div>
+            </div>
+            <!--3-->
+            <div class="row">
+                <div class="left">
+                    <div class="left-left">
+                        this exact word or phrase:
+                    </div>
+                    <div class="left-right">
+                        <input type="text" class="advanced-search-textarea" name="as_epq" autocomplete="off">
+                    </div>
+                </div>
+                <div class="right">
+                    Put exact words in quotes: <b>"rat terrier"</b>
+                </div>
+            </div>
+            <!--4-->
+            <div class="row">
+                <div class="left">
+                    <div class="left-left">
+                        any of these words:
+                    </div>
+                    <div class="left-right">
+                        <input type="text" class="advanced-search-textarea" name="as_oq" autocomplete="off">
+                    </div>
+                </div>
+                <div class="right">
+                    Type <b>OR</b> between all the words you want to <b>miniature OR standard</b>
+                </div>
+            </div>
+            <!--5-->
+            <div class="row">
+                <div class="left">
+                    <div class="left-left">
+                        none of these words:
+                    </div>
+                    <div class="left-right">
+                        <input type="text" class="advanced-search-textarea" name="as_eq" autocomplete="off">
+                    </div>
+                </div>
+                <div class="right">
+                    <p style="padding:0px; margin:0px;">Put a minus sign just before words that you don't want:</p>
+                    <b style="padding:0px">-rodent, -"Jack Russell"</b>
+                </div>
+            </div>
+            <!--6-->
+            <div class="row">
+                <div class="left">
+                    <div class="left-left">
+                        numbers ranging from:
+                    </div>
+                    <div class="left-right">
+                        <input type="text" class="advanced-search-textarea" style="
+                            width: 15vw;
+                            margin-right: 2vw;
+                            "
+                            name="as_nlo" autocomplete="off">
+                        to
+                        <input type="text" class="advanced-search-textarea" style="
+                            width: 16vw;
+                            margin-left: 2vw;
+                        "
+                        name="as_nhi" autocomplete="off">
+                    </div>
+                </div>
+                <div class="right">
+                    <p style="padding:0px; margin:0px;">Put two full stops between the numbers and add a unit of measurement:</p>
+                    <b style="padding:0px">10..35 kg, £300..£500, 2010..2011</b>
+                </div>
+            </div>
+            <div>
+                <input type="submit" value="Advanced Search" class="advanced-search-button">
+            </div>
+        </div>
+        </form>
+        <hr>
+    </body>
+</html>
